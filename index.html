@@ -241,6 +241,34 @@
             .section-title {
                 font-size: 1.1rem;
             }
+
+            /* Mobile navigation improvements */
+            .nav-glass .max-w-7xl {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .nav-name {
+                font-size: 1.25rem;
+            }
+
+            .nav-badge {
+                display: none;
+            }
+
+            .social-links {
+                gap: 0.5rem;
+            }
+
+            .social-btn {
+                width: 36px;
+                height: 36px;
+            }
+
+            .social-btn svg {
+                width: 1rem;
+                height: 1rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -274,19 +302,38 @@
                 font-size: 1.75rem;
             }
 
+            /* Ultra-mobile navigation */
             .nav-glass .max-w-7xl {
-                padding-left: 1rem;
-                padding-right: 1rem;
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+
+            .nav-name {
+                font-size: 1.1rem;
+            }
+
+            .nav-badge {
+                display: none;
+            }
+
+            .social-links {
+                gap: 0.25rem;
             }
 
             .social-btn {
-                width: 36px;
-                height: 36px;
+                width: 32px;
+                height: 32px;
             }
 
             .social-btn svg {
-                width: 1rem;
-                height: 1rem;
+                width: 0.875rem;
+                height: 0.875rem;
+            }
+
+            /* Reduce navbar padding */
+            .nav-glass .max-w-7xl {
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
             }
         }
 
@@ -382,14 +429,14 @@
             <div class="flex items-center justify-between">
                 <!-- Logo/Name -->
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold gradient-text">Arjun Ojha</h1>
-                    <span class="ml-3 px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
+                    <h1 class="nav-name text-2xl font-bold gradient-text">Arjun Ojha</h1>
+                    <span class="nav-badge ml-3 px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
                         Flutter Developer
                     </span>
                 </div>
                 
                 <!-- Social Links -->
-                <div class="flex items-center space-x-3">
+                <div class="social-links flex items-center space-x-3">
                     <a href="https://x.com/arjunojhaa" class="social-btn" aria-label="X">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
